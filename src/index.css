@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.moving-gradient {
+    background:  linear-gradient(60deg, rgba(216, 148, 255, 0.5), rgba(120, 115, 245, 0.5), rgba(132, 255, 214, 0.5), rgba(126, 214, 255, 0.5));
+    background-size: 600% 600%;
+    animation: gradientAnimation 50s ease infinite;
+    position: relative;
+    z-index: 10; /* Ensure the navbar is above other content */
+  }
+  
+  @keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+
+
+  }
+
